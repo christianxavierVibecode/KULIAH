@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/avif" href="../assets/logo.avif" />
+    <title>Halaman Info - Melayang</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2c3e50;
+        font-family: "Segoe UI", sans-serif;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      body.loaded {
+        opacity: 1;
+      }
+
+      .info-box {
+        width: 400px;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        animation: melayang 3s ease-in-out infinite;
+      }
+
+      .card-header > * {
+        margin: 0px;
+      }
+
+      .info-box {
+        width: 400px;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        text-align: center;
+      }
+
+      .info-box h2 {
+        margin-top: 0;
+        color: #2980b9;
+      }
+
+      .info-box p {
+        color: #555;
+        line-height: 1.5;
+      }
+
+      .btn-close {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #e74c3c;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 5px;
+        transition: background 0.3s;
+      }
+
+      .btn-close:hover {
+        background-color: #c0392b;
+      }
+
+      @keyframes melayang {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .info-box {
+          width: auto;
+          margin: 0 20px;
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info-box">
+      <div class="card-header">
+        <h2>Portfolio Mahasiswa</h2>
+        <p class="nim">NIM: <span>255410048</span></p>
+        <p class="nama">Nama: <strong>Xavier Christian Rihi</strong></p>
+      </div>
+
+      <hr />
+
+      <div class="card-body">
+        <p class="deskripsi">
+          Selamat datang di website artikel sederhana yang dibuat dengan HTML
+          dan CSS. Website ini dibuat sebagai representasi dari penggunaan tag
+          HTML5 dasar, list dan hyperlink seperti <span>div</span>,
+          <span>ol</span>, <span>ul</span>, <span>li</span>, <span>p</span> dan
+          beberapa tag lain. Selain itu beberapa properti CSS dasar dan layout
+          juga dipakai di sini yang telah dipelajari pada pertemuan 1 - 4.
+        </p>
+      </div>
+
+      <div class="card-footer">
+        <a href="./Halaman_Utama.html" class="btn-close">Masuk ke Website</a>
+      </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

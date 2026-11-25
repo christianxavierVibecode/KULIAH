@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/avif" href="../assets/logo.avif" />
+    <title>Halaman Artikel Dasar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      body.loaded {
+        opacity: 1;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      header > * {
+        margin: 0;
+      }
+      header h1 {
+        margin-bottom: 8px;
+      }
+      .highlight {
+        color: #e74c3c;
+        font-weight: bold;
+      }
+      .article-content {
+        margin-top: 20px;
+      }
+      footer {
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #777;
+        text-align: center;
+      }
+      a {
+        color: #3498db;
+        text-decoration: none;
+        transition: all 1s ease;
+      }
+      a:hover {
+        color: #e74c3c;
+        font-size: 101%;
+      }
+      .hero-title {
+        background: linear-gradient(90deg, #000, #e74c3c, #000);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradientMove 5s linear infinite;
+        animation: floatingTitle 4s ease-in-out infinite;
+      }
+
+      @keyframes gradientMove {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      @keyframes floatingTitle {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="hero-title">Panduan Belajar Dasar HTML & CSS</h1>
+        <p>
+          Ditulis oleh: <span class="highlight">Christian Xavier</span> |
+          Tanggal: 17 April 2026
+        </p>
+      </header>
+
+      <hr />
+
+      <div class="article-content">
+        <h2>Pendahuluan</h2>
+        <p>
+          HTML adalah pondasi dari sebuah website. Dengan menggunakan tag yang
+          tepat, kita bisa membuat struktur konten yang rapi. Misalnya, kita
+          bisa menggunakan tag
+          <span
+            class="highlight"
+            title="tag <span> adalah wadah sebaris yang digunakan untuk mark up bagian dari teks, atau bagian dari dokumen."
+            >span</span
+          >
+          untuk memberikan gaya pada kata tertentu di dalam paragraf.
+        </p>
+
+        <h3>Daftar Materi yang Dipelajari</h3>
+
+        <p>Materi Umum:</p>
+        <ul>
+          <li>Struktur Dasar HTML</li>
+          <li>Elemen Kontainer (Div & Span)</li>
+          <li>Tautan (Anchor Tag)</li>
+        </ul>
+
+        <h3>Langkah-langkah Praktikum</h3>
+
+        <p>1. Tahapan Utama (Type 1):</p>
+        <ol type="1">
+          <li>Menyiapkan Text Editor</li>
+          <li>Membuat file index.html</li>
+        </ol>
+
+        <p>2. Klasifikasi Dokumen (Type A):</p>
+        <ol type="A">
+          <li>Head Section</li>
+          <li>Body Section</li>
+        </ol>
+
+        <p>3. Sub-elemen Penting (Type a):</p>
+        <ol type="a">
+          <li>Paragraf</li>
+          <li>Formatting</li>
+        </ol>
+
+        <p>4. Urutan Romawi Besar (Type I):</p>
+        <ol type="I">
+          <li>Struktur Dasar</li>
+          <li>Styling CSS</li>
+        </ol>
+
+        <p>5. Urutan Romawi Kecil (Type i):</p>
+        <ol type="i">
+          <li>Padding</li>
+          <li>Margin</li>
+        </ol>
+
+        <div style="margin-top: 20px">
+          <h3 style="margin-bottom: -10px">Contoh Artikel</h3>
+          <ul style="font-style: italic">
+            <li>
+              <a class="articleLink" href="./Halaman_Artikel1.html"
+                >Cara Memasukkan Gambar dan Kode di HTML</a
+              >
+            </li>
+            <li>
+              <a class="articleLink" href="./Halaman_Artikel2.html"
+                >Cara Membuat Tabel Sederhana di HTML</a
+              >
+            </li>
+            <li>
+              <a class="articleLink" href="./Halaman_Artikel3.html"
+                >Cara Membuat Form Input Sederhana di HTML</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div style="margin-top: 20px">
+          <h3>Referensi Belajar</h3>
+          <p>
+            Untuk mempelajari lebih lanjut, silakan kunjungi
+            <a href="https://www.w3schools.com/html/" target="_blank"
+              >W3Schools Online Web Tutorials</a
+            >.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Belajar Coding Dasar. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
